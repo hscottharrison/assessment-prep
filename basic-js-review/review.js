@@ -11,7 +11,7 @@ var myFavoriteColor = myFave + color;
 var aThroughD = ['a', 'b', 'c', 'd'];
 //5. Remove 'a' and store it to a variable called isForApple.
 var isForApple = aThroughD.splice(0,1);
-isForApple.join();
+isForApple = isForApple.join('')
 //6. Add 'e' to the end of aThroughD.
 aThroughD.push('e');
 //7. Add 'apple' to the beginning of aThroughD
@@ -23,8 +23,8 @@ for(var i = 0; i < aThroughD.length; i++){
   }
 }
 //9. Leave 'apple' in the array but put a copy of it on a var called bestFruit
-var bestFruit = aThroughD.slice(0,1);
-bestFruit.join();
+var bestFruit = aThroughD.slice(0,1).join("");
+
 //10. Create an object called spaceJam
 //    spaceJam has: a title of 'Space Jam' (String)
 //                  a release_year of 1996 (Number)
@@ -33,7 +33,7 @@ bestFruit.join();
 
 var spaceJam = {
   title: "Space Jam",
-  release_year: 1966,
+  release_year: 1996,
   oscarAwardWinner: false,
   stars: ["Michael Jordan", "Bugs Bunny", "Bill Murray"]
 }
@@ -73,7 +73,7 @@ function finder(arr, str){
 //15. Write a function called numChecker that takes in a parameter and checks to see if it is a number or a
   //number in a string (ie '12' or 12) - if so, return true, else return false
 function numChecker(num){
-  return !Number.isNaN(num);
+  return Number(num) == num;
 }
 
 

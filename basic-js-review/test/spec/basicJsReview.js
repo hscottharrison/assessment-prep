@@ -74,6 +74,7 @@ describe('review', function () {
 
   describe('isForApple', function () {
     it('should exist', function () {
+    console.log(isForApple, typeof isForApple)  
       expect(isForApple).toEqual(jasmine.any(String));
     })
     it('should equal a', function () {

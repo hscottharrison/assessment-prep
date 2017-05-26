@@ -48,6 +48,7 @@ var fibonacci = function(n) {
 
 
 
+
 ///Context///
 
 //7. Inside contextIt, inkoke myFn with its context set explicitly
@@ -132,5 +133,5 @@ function countdownMaker(str, days){
 /////boolean, etc)
 
 function notMyType(param){
-  return typeof param;
+  return typeof param;en
 }
